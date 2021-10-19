@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analys</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./">Index sidan</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Analysera en webbplats</h1>
+      <p>
+        Jag har valt att analysera <a href="https://CSN.se">CSN.se</a>.
+        Webbplatsen tillhör Centrala studiestödsnämnden vilket är en svensk
+        myndighet.
+      </p>
+      <h2>Vilket syfte verkar webbplatsen ha? Hur kommer du fram till det?</h2>
+      <p>
+        Webbplatsens syfte är att på ett effektivt sätt ge personer i Sverige
+        möjligheten att söka studie-bidrag, studie-lån, hemutrustningslån och
+        körkortslån. På CSNs webbsida står det följande,
+      </p>
+      <p>
+        &quot;CSN hanterar det svenska studiestödet samt hemutrustningslån och
+        körkortslån. Vi är också statistikansvarig myndighet för
+        studiestödet&quot;<a
+          href="https://www.csn.se/om-csn/vart-uppdrag/var-verksamhet-och-uppdrag.html#:~:text=CSN%20hanterar%20det%20svenska%20studiest%C3%B6det,ocks%C3%A5%20statistikansvarig%20myndighet%20f%C3%B6r%20studiest%C3%B6det."
+          >2</a
+        >.
+      </p>
+      <h2>
+        Vilken målgrupp verkar webbplatsen ha? Motivera! Hur logisk tycker du
+        att navigeringen på webbplatsen är?
+      </h2>
+      <p>
+        Webbplatsen verkar för det mesta rikta sig mot studenter. Det är det
+        första som kommer upp på första-sidan, exempelvis &quot;Så ansöker du om
+        studielån&quot; eller &quot;Betalar du på lån men ska börja studera
+        igen?&quot;. Alla bilder på hemsidan är också på yngre människor.
+      </p>
+      <h2>Hur logisk tycker du att navigeringen på webbplatsen är?</h2>
+      <p>
+        Personligen tycker jag att navigeringen på hemsidan är mycket logisk.
+        Det första man ser när man kommer in på hemsidan är sökrutan. Genom
+        sökrutan kan du komma till alla underliggande sidor, inklusive alla
+        informativa artiklar som hemsidan ger dig tillgång till. I samband med
+        sökandet så har de även förslag på sidor, beroende på vad du skriver. De
+        har även valt att använda sig av &quot;bread crumbs&quot; för att
+        förebygga att man tappar bort sig i samband med navigerandet.
+      </p>
+
+      <h2>Hur och varför används bilder på webbplatsen?</h2>
+
+      <p>
+        Webbplatsen använder sig av förvånandsvärt få bilder. De bilder som
+        används däremot verkar finnas där i ett syfte att locka användarens
+        uppmärksamhet.
+      </p>
+
+      <h2>
+        Hur är tillgängligheten, hur skulle t.ex. en synskadad uppfatta
+        webbplatsen?
+      </h2>
+
+      <p>
+        Mycket bra. Jag använde Chrome DevTools för att kolla igenom en stor del
+        HTML-taggarna och det har använd alla nödvändiga ARIA attributer. ARIA
+        eller Accessible Rich Internet Applications är ett sätt för att göra
+        webbsidor mer tillgängliga för synskadade.
+      </p>
+      <p>
+        <img src="aria-score.png" alt="First aria score" />
+        WebAccessibility
+        <img src="aria-score-2.png" alt="Second aria score" />
+        WebAim
+      </p>
+      <p>
+        Jag använde mig även utav
+        <a href="https://www.webaccessibility.com/"
+          >https://www.webaccessibility.com/</a
+        >
+        samt <a href="http://wave.webaim.org">http://wave.webaim.org</a> för att
+        testa hemsidan.
+      </p>
+
+      <h2>
+        Är webbplatsen responsiv, alltså fungerar webbplatsen på olika
+        skärmupplösningar/skärmstorlekar?
+      </h2>
+
+      <p>
+        Här valde jag att använda mig a Chrome DevTools återigen. Hemsidan är
+        responsiv, den anpassar sig efter alla DevTools förinställda
+        skärmupplösningar. Här är ett exempel på hur det ser ut.
+      </p>
+      <p><img src="devtools.png" alt="DevTools csn.se" /></p>
+
+      <h2>
+        Vilka brister i webbplatsen hittar du och vilka lösningar på problemen
+        skulle du föreslå? - Brister kan vara både utifrån ett
+        användarperspektiv och utifrån ett grafiskt designperspektiv.
+      </h2>
+
+      <p>
+        Den största bristen ur ett användarperspektiv som jag ser är hur csn.se
+        väljer att hantera olika språk. I språkinställningarna så finns det
+        minst två dussin språk vilket är superbra. Problemet är det faktum att
+        de inte översätter hela hemsidan utan väljer att istället översätta en
+        sida med bunt artiklar istället.
+      </p>
+      <p>
+        Ur ett grafiskt designperspektiv så finns det bara en mycket liten brist
+        jag ser. Det är att under Frågor och Svar sidan så separerar de inte
+        frågorna tillräckligt bra. I en av spalterna gör dem det utmärkt med
+        pluss-ikoner som gör det tydligt för ögat.
+      </p>
+      <p><img src="fragor-o-svar.png" alt="Frågor och svar" /></p>
+      <p>
+        Jag förstår varför dem har valt att göra som de gjorde, de som är
+        otydligt utplacerade är länkar samtidigt som de andra är
+        &quot;flikar&quot;. Jag hade fortfarande valt att lösa det med
+        möjligtvis genom att ha alternerande bakgrund för varje fråga.
+      </p>
+    </main>
+  </body>
+</html>
