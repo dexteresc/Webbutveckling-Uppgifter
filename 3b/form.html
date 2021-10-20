@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form > * {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+      <!-- Använder div för att separera alla input + label -->
+    <form
+      action="https://staff.www.ltu.se/~susfah/VT19/parse_form.php"
+      method="post"
+    >
+      <h1>Supportforumulär</h1>
+      <div class="namn">
+        <label for="namn">Ditt namn:</label>
+        <input type="text" name="namn" id="namn" />
+      </div>
+      <div class="telefon">
+        <label for="telefon">Telefon:</label>
+        <input type="text" name="telefon" id="telefon" />
+      </div>
+      <div class="prioritet">
+        <label for="prioritet">Prioritet:</label>
+        <select name="prioritet" id="prioritet">
+          <option value="1">Låg</option>
+          <option value="2">Normal</option>
+          <option value="3">Hög</option>
+        </select>
+      </div>
+      <div class="ort">
+        <label>Tilldela till ort:</label>
+        <br />
+        <input type="radio" name="ort" class="cities" value="gbg" />
+        <label>Göteborg</label>
+        <br />
+        <input type="radio" name="ort" class="cities" value="sthlm" />
+        <label>Stockholm</label>
+        <br />
+        <input type="radio" name="ort" class="cities" value="ume" />
+        <label>Umeå</label>
+        <br />
+        <input type="radio" name="ort" class="cities" value="lule" />
+        <label>Luleå</label>
+        <br />
+      </div>
+
+      <div class="kategori">
+        <label for="kategori">Kategori:</label>
+        <br />
+        <select name="kategori" id="kategori">
+          <option value="fakt">Fakturering</option>
+          <option value="net">Internet</option>
+          <option value="tel">Telefoni</option>
+          <option value="epost">E-post</option>
+        </select>
+      </div>
+      <div class="rubrik">
+        <label for="rubrik">Rubrik:</label>
+        <br />
+        <input type="text" name="rubrik" id="rubrik" />
+      </div>
+      <div class="beskrivning">
+        <label for="beskrivning">Text:</label>
+        <br />
+        <textarea
+          name="beskrivning"
+          id="beskrivning"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <input type="submit" name="skicka" value="Submit" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>
